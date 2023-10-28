@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/staticstyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/faq/staticstyle.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Frequently Asked Questions</title>
+    <script>
+        // load navbar
+        $(document).ready(function () {
+            $("#navbar-wrapper").load("navbar.html")
+        })
+
+    </script>
+</head>
+<body>
+    <nav id="navbar-wrapper"></nav>
+
+    <section id="faq">
+    <div class="accordion-wrapper">
+        <input type="checkbox" id="faq-1">
+        <h1><label for="faq-1">How do I xyz?</label></h1>
+        <div class="p">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae distinctio minima molestiae rerum! Voluptate veniam suscipit ex impedit alias, eveniet explicabo dolorem sunt obcaecati commodi odio corrupti placeat laudantium. Reiciendis, delectus iste rerum tempora libero dignissimos possimus ipsa error assumenda, doloremque cum deleniti sint tempore dolor. Veritatis neque unde libero, qui consequuntur officiis. Libero dolorem doloribus laudantium dolore eos, officia doloremque quibusdam quasi. Nesciunt labore quasi reiciendis omnis. Accusamus iste sint exercitationem tempore provident veritatis.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="accordion-wrapper">
+        <input type="checkbox" id="faq-2">
+        <h1><label for="faq-2">Where can I go to zyx</label></h1>
+        <div class="p">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore veniam accusantium vero voluptatibus, iure nisi accusamus ducimus ipsa, cumque voluptate illum aliquam dolor quis! Molestiae, vero suscipit rem illo, mollitia provident doloribus et nobis repellat quas quod quos tenetur atque deleniti ducimus. Sed qui est ducimus perspiciatis repudiandae cum earum!</p>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+<!-- to make only one open at a time: https://stackoverflow.com/questions/37745154/only-open-one-accordion-tab-at-one-time -->
+
+</body>
+</html>

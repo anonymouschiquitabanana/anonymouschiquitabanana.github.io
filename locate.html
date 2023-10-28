@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Leaflet Map</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="css/staticstyle.css" />
+    <link rel="stylesheet" href="css/locate/staticstyle.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/leaflet/leaflet.js"></script>
+
+    <script>
+        // load navbar
+        $(document).ready(function () {
+            $("#navbar-wrapper").load("navbar.html")
+        })
+
+    </script>
+</head>
+
+<body>
+
+    <nav id="navbar-wrapper"></nav>
+
+    <div>
+        <h1>Find a retailer</h1>
+        <h3> Discover one of several (dozens?) stores located conveniently near you</h3>
+        <h4>Need to know what info goes on this page before designing it</h4>
+
+    </div>
+
+    <div id="map"></div>
+
+    <div style="margin-top: 5vh;">
+        <p>need to know what data to collect before setthing this up. Will likely also use a recaptcha</p>
+        <form>
+            <fieldset>
+                <label for="email">email</label>
+                    <input type="text" id="email" name="email">
+                
+                <label for="name">Garden Center name</label>
+                    <input type="text" id="name" name="name">
+                
+                
+
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
