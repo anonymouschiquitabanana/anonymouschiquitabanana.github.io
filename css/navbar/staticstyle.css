@@ -1,0 +1,80 @@
+#navbar-wrapper {
+    margin-bottom: 10vh;
+}
+
+#navbar {
+    
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    margin: 0 !important;
+    
+    /* background-color: var(--green1); */
+    background-image: var(--bkg-gradient);
+    border-bottom: black double 3px;
+    /* can try making navbar thinner, have logo bulge out */
+    /* border is just for aligning other elements - temporary */
+}
+
+#navbar > a {
+    z-index: 998;
+    margin: 5px 20px;
+    color: white;
+    font-size: 1.3rem;
+    font-size: clamp(1rem, .8rem + 1vw, 1.5rem);
+    padding: 5px;
+    text-decoration: none;
+    border: white solid 1px;
+    border-radius: 8px;
+}
+
+#navbar a:hover:not(#logo a) {
+    border-color: rgba(255, 255, 255, 0.75);
+    text-decoration: underline;
+    padding: 7px;
+    font-size: 1.4rem;
+    font-size: clamp(1.1rem, .9rem + 1vw, 1.6rem);
+    margin: 5px 15px;
+}
+
+
+#logo img{
+    height: 12.3vh;
+    padding-top: .25vh;
+}
+
+#logo img:hover {
+    height: 12.7vh;
+}
+
+/* On mobile: logo + hamburger - at 830 px when swithch to 1 col*/
+
+/* To have logo be larger than nav bar: */
+#logo {
+    z-index: 999999;
+    padding-top: 7vh;
+}
+
+#logo img {
+    height: 15vh;
+}
+
+#logo img:hover {
+    height: 16vh;
+}
+
+#navbar {
+    height: 10vh;
+}
+#navbar > a {
+    
+}
+
+/* End here */
+

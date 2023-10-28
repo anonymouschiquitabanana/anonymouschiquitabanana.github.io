@@ -1,0 +1,79 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+section#faq {
+    margin-top: 13vh;
+}
+
+div.accordion-wrapper {
+    position: relative;
+    margin: 2em;
+    left: 15vw;
+    width: 70%;
+}
+
+input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: 0;
+}
+
+h1 {
+    /* background: steelblue; */
+    color: black;
+    padding: .25em;
+    position: relative;
+}
+
+label::before {
+    content: "+";
+    display: inline-block;
+    /* border: 15px solid transparent;
+    border-left: 20px solid var(--beige-2); */
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div.p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: var(--beige-2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+div.p p {
+    padding: 1em;
+}
+
+input:checked~h1 label::before {
+    content: "-";
+
+    display: inline-block;
+}
+
+input:checked~h1~div.p {
+    max-height: 100px;
+}
+
+
+/* very goog example https: https: //codepen.io/bilal-pf/pen/eYZrPGW */

@@ -1,0 +1,43 @@
+document.addEventListener("DOMContentLoaded", function () {
+var map = L.map('map').setView([39, -96], 4);
+
+            var tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 7,
+                minZoom: 4,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+
+        
+        // var marker = L.marker([41.6, -73.08]).addTo(map);
+
+        var locations = [
+            ['1', 41.6, -73.08],
+            ['<a href="https://www.google.com"><h1>title</h1></a><img src="img/testlogo.png" height=50px;/>', 41.6, -83.08]
+        ]
+
+
+        for (var i = 0; i < locations.length; i++) {
+            marker = new L.marker([locations[i][1], locations[i][2]])
+                .bindPopup(locations[i][0])
+                .addTo(map);
+        }
+
+
+
+        
+        // for custom icon
+        // const myIcon = L.icon({
+        //         iconUrl: 'myIcon.png',
+        //         // ...
+        //     });
+
+        //     L.marker([coord, coord2], { icon: myIcon })
+        //         .addTo(this.map)
+    
+
+
+        // potential ideas:
+        // gray out non-us
+        // restrict scrolling past us
+    });

@@ -1,0 +1,119 @@
+:root {
+
+    /* text part of logo */
+    --logo-g1: #215918;
+    --logo-g2: #64BB46;
+    --logo-g2-v1: #4d8d37;
+    /* Darker version of logo-g2 */
+    --logo-y: #ECEA37;
+    --logo-y-v1:rgb(100, 99, 27);
+
+    /* character part of logo */
+    --logo-g3: #61BC47;
+    /* right side of jacket */
+    --logo-g4: #4F9D3A;
+    /* left arm of jacket */
+
+
+    /* arbitrary */
+    --green1: #517A46;
+    --green2: #649557;
+    --green3:#4a6e40;
+    /* --green4: #395a32; */
+
+    /* https: //color.adobe.com/create/color-wheel */
+    --c2: #7A5846;
+    --c3: #7A6646;
+    --beige-1: #C8AD7F;
+    --beige-2: #E5C899;
+    --beige-3: #FFE4B4;
+    /* square */
+
+    --c4: #BFCFBA;
+    /* compound / triad */
+
+    --c5: #323B30;
+    /* complementary */
+
+    /* --bkg-gradient: linear-gradient(to right,var(--green3), var(--green2)); */
+    --bkg-gradient: linear-gradient(to right, var(--logo-g1), var(--logo-g2-v1));
+}
+
+
+body {
+    /* background-color: var(--c3); */
+    /* background-color: var(--beige-1); */
+    background-color: var(--beige-2);
+    /* background-color: var(--beige-3); */
+
+    
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Gill Sans doesn't have spaces after periods? */
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    margin: 0 auto;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 5vh 2vh;
+}
+
+.flex-item {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.btn {
+    display: block;
+    margin: 5vh auto;
+    text-align: center;
+
+    background-color: var(--c2);
+    border: var(--c4) double 4px;
+    border-radius: 5px;
+    
+
+    padding: 1vh 1vw;
+    height: 100%;
+    width: fit-content;
+}
+
+.learn-more {
+    color: #fff;
+    font-size: 2.2rem;
+    font-size: clamp(1rem, .8rem + 1vw, 2.5rem);
+
+}
+
+.learn-more:hover {
+    background-color: #777;
+    /* add hover animation */
+}
+
+
+/* for some reason this works here but not in index/staticstyle */
+@media (max-width: 830px) {
+    .flex-container {
+        height: 100%;
+        flex-wrap: wrap-reverse;
+        border: red solid 10px;
+    }
+
+    #hero-banner.flex-item {
+        width: 90vw;
+        height: 39vh;
+    }
+    .banner-img {
+        height:39vh;
+    }
+
+}
+
+
+
