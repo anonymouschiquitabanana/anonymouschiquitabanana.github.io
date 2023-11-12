@@ -1,0 +1,28 @@
+#footer-wrapper {
+    background-image: var(--bkg-gradient);
+    color: white;
+    font-size: clamp(.9rem, .8rem + .5vw, 1.2rem)
+}
+
+#awards {
+    align-items: flex-start;
+
+}
+
+#awards a{
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#col2-RENAME-ME {
+    align-items: baseline;
+    
+    /* line-height: .5; */
+}
+
+#col2-RENAME-ME > a {
+    /* text-decoration: none; */
+    line-height: 1.5;
+    color: white;
+}

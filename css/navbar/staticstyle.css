@@ -1,3 +1,16 @@
+/* TO DO
+GET SUGGESTIONS FOR:
+hamburger menu dropdown background color
+styling in hamburger menu
+
+navbar animation: is jumpiness jarring (easy to go to different animation
+
+***Add another button to distinguish locate growers/retailers? Replace a differnt button or new design?
+
+*/
+
+
+
 #navbar-wrapper {
     margin-bottom: 10vh;
 }
@@ -24,40 +37,30 @@
 
 #navbar > a {
     z-index: 998;
-    margin: 5px 20px;
+    margin: 5px 1vw; 
     color: white;
     font-size: 1.3rem;
-    font-size: clamp(1rem, .8rem + 1vw, 1.5rem);
+    font-size: clamp(1rem, .5rem + 1vw, 1.5rem);
     padding: 5px;
     text-decoration: none;
     border: white solid 1px;
     border-radius: 8px;
 }
 
-#navbar a:hover:not(#logo a) {
+#navbar a:hover:not(#logo a):not(#hamburger-menu a) {
     border-color: rgba(255, 255, 255, 0.75);
     text-decoration: underline;
     padding: 7px;
     font-size: 1.4rem;
-    font-size: clamp(1.1rem, .9rem + 1vw, 1.6rem);
+    font-size: clamp(1.1rem, .6rem + 1vw, 1.6rem);
     margin: 5px 15px;
-}
-
-
-#logo img{
-    height: 12.3vh;
-    padding-top: .25vh;
-}
-
-#logo img:hover {
-    height: 12.7vh;
 }
 
 /* On mobile: logo + hamburger - at 830 px when swithch to 1 col*/
 
 /* To have logo be larger than nav bar: */
 #logo {
-    z-index: 999999;
+    z-index: 9999;
     padding-top: 7vh;
 }
 
@@ -72,9 +75,96 @@
 #navbar {
     height: 10vh;
 }
-#navbar > a {
-    
+
+#hamburger-menu {
+    margin-right: 5vw;
+    display: none;
 }
 
-/* End here */
+#hamburger-btn {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+    #navbar > a:not(#logo a){
+        display: none;
+    }
+
+    #hamburger-btn {
+        display: none; 
+}
+
+
+    #hamburger-menu img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    #hamburger-menu {
+        display: flex;
+            }
+
+    #hamburger-menu-contents {
+        /* style this for the dropdown hamburger menu */
+        /* make this an animation */
+        display: none;
+        position: absolute;
+        /* change background styling */
+        background-color: rgba(0, 0, 0, .85);
+        border: 2px black double;
+        right: 0;
+        top: 13.5vh;
+        width: 50%;
+
+    }
+    #hamburger-menu-contents ul{
+        list-style: none;
+        
+        padding: 5px 10px;
+        }
+    
+    #hamburger-menu-contents ul li {
+        padding: 5px;
+        margin: 5px;
+    }
+
+
+        #hamburger-menu-contents a {
+            color: white;
+        }
+
+    #hamburger-btn:checked ~ #hamburger-menu-contents{
+        display: block;
+        
+    }
+
+    #navbar {
+        height: 13.5vh;
+        align-items: flex-end;
+        justify-content:space-between;
+    }
+
+    #logo {
+
+    }
+
+    #logo img {
+        /* position: fixed; */
+        top: -10vh;
+        margin-top: 100px;
+        margin-left: 5vw;
+        overflow: hidden;
+        height: 12.5vh;
+    }
+
+        #logo img:hover {
+            height: 12.5vh;
+        }
+
+
+
+
+}
 

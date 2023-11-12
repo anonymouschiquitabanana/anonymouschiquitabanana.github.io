@@ -1,7 +1,8 @@
 
 
 .banner-wrapper {
-    margin-bottom: 10vh;
+    /* margin-bottom: 10vh; */
+    display: block;
     color: white;
 }
 
@@ -13,12 +14,9 @@
 
 #key-features {
     font-size: 1.75rem;
-    font-size: clamp(1.25rem, 1rem + 1vw, 2rem);
+    font-size: clamp(1.1rem, 2.35vw, 2rem);
     line-height: 1.1em;
-    /* background-color: rgba(0, 0, 0, .1); */
-    /* border: white solid 3px; */
     padding: 0 20px;
-    /* margin-left:; */
 }
 
 
@@ -28,10 +26,12 @@
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.25rem;
     /* figure out scaling */
-    font-size: clamp(3rem, 2rem + 2.5vw, 5rem);
+    font-size: clamp(2.25rem,  4.4vw, 5rem);
+
     margin-bottom: 3rem;
+    /* font-size: 2.5vw; */
 }
 
 .banner-text {
@@ -39,44 +39,120 @@ h1 {
     
 }
 
-.banner-img {
+#hero-img-container {
+    overflow: hidden;
+}
+
+#hero-img-container img {
     display: block;
     max-width: 100%;
     height: 100%;
     object-fit: contain;
-    overflow: hidden;
+    /* overflow: hidden; */
     object-position: top;
 }
 
 #featured-info {
     margin: 5vw;
-    font-size: 20px;
-    /* font-size: clamp(16px, 24px ) */
+    font-size: 1.5rem;
+    line-height: 2.5vh;
+    font-size: clamp(1rem, .8rem + .7vw, 1.5rem);
+}
+
+#featured-info .flex-container {
+    height: 35vh;
+    padding: 0;
 }
 
 #featured-info h2 {
     font-size: 2em;
 }
 
+#MAKE-ONE, #history-img-container {
+    /* readjust with aspect ratio of actual image */
+        height: 100%;
+        width: 100%;
+        
 
-#history-container {
-    height: 35vh;
-    padding: 0;
+        object-fit: contain;
+        overflow: hidden;
+
 }
 
-
-#history img {
+#featured-info img {
     /* readjust with aspect ratio of actual image */
+    /* copied from history as a placeholder */
     height: 100%;
     width: 100%;
-    width: 25vw;
-    
+    width: 35vw;
+
     object-fit: contain;
     overflow: hidden;
 }
 
-#history p {
-    /* width: 60vw; */
+.learn-more {
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+    font-size: clamp(1rem, .8rem + 1vw, 2.5rem);
+    background-color: var(--c2);
+    border: var(--c4) double 4px;
+    border-radius: 10px;
+    transition: background-color 0.15s;
 }
+
+.learn-more:hover {
+    background-color: #777;
+    /* add hover animation */
+}
+
+hr {
+    border:none;
+    background: var(--logo-g1);
+    height: 2px;
+}
+
+hr:after {
+    /* box-sizing: border-box; */
+    /* margin: 100px; */
+}
+
+
+
+@media (max-width: 900px) {
+    #featured-info .flex-container {
+        height: 100%;
+        flex-wrap: wrap-reverse !important;
+        /* border: red solid 10px; */
+    }
+    #banner-wrapper{
+        padding-top: 20vh;
+    }
+
+    #hero-banner.flex-item {
+        width: 90vw;
+        height: 35vh;
+    }
+
+    #hero-img-container{
+        /* height: 45vh; */
+        /* width: 45vw; */
+    }
+    
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+        
+    #key-features li {
+            margin: 1em 0;
+            padding: 0;
+        }
+
+}
+
+
+
+
 
 

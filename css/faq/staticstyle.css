@@ -33,7 +33,6 @@ input {
 }
 
 h1 {
-    /* background: steelblue; */
     color: black;
     padding: .25em;
     position: relative;
@@ -42,8 +41,6 @@ h1 {
 label::before {
     content: "+";
     display: inline-block;
-    /* border: 15px solid transparent;
-    border-left: 20px solid var(--beige-2); */
 }
 
 label {
@@ -51,6 +48,7 @@ label {
     position: relative;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 
 div.p {
@@ -76,4 +74,5 @@ input:checked~h1~div.p {
 }
 
 
-/* very goog example https: https: //codepen.io/bilal-pf/pen/eYZrPGW */
+/* very good example https: https: //codepen.io/bilal-pf/pen/eYZrPGW */
+/* to make only one open at a time: https: //stackoverflow.com/questions/37745154/only-open-one-accordion-tab-at-one-time */
