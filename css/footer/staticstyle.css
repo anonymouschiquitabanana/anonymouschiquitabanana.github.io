@@ -1,28 +1,34 @@
+/* 
+TODO
+add something in the middle on larger screens? form?
+
+Add social media?
+
+*/
+
+
 #footer-wrapper {
     background-image: var(--bkg-gradient);
     color: white;
-    font-size: clamp(.9rem, .8rem + .5vw, 1.2rem)
+    font-size: clamp(.8rem, .8rem + .4vw, 1.2rem);
 }
 
-#awards {
+.flex-container {
+    padding: 3vh 2vw;
+}
+
+.flex-item {
     align-items: flex-start;
-
+    align-self: flex-start;
 }
 
-#awards a{
-    margin: 10px;
+.flex-item a {
     color: white;
-    text-decoration: none;
-}
-
-#col2-RENAME-ME {
-    align-items: baseline;
+    margin: 0 10vw 2vh 0;
     
-    /* line-height: .5; */
 }
 
-#col2-RENAME-ME > a {
-    /* text-decoration: none; */
-    line-height: 1.5;
-    color: white;
+#col1 a {
+    /* so the trophy icon isn't underlined */
+    text-decoration: none;
 }

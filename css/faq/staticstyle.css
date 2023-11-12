@@ -12,13 +12,13 @@ body {
 }
 
 section#faq {
-    margin-top: 13vh;
+    margin-top: 18vh;
 }
 
 div.accordion-wrapper {
     position: relative;
     margin: 2em;
-    left: 15vw;
+    left: 10vw;
     width: 70%;
 }
 
@@ -71,6 +71,13 @@ input:checked~h1 label::before {
 
 input:checked~h1~div.p {
     max-height: 100px;
+}
+
+@media (max-width: 900px) {
+    /* navbar changes here */
+    section#faq {
+        margin-top: 15vh;
+}
 }
 
 

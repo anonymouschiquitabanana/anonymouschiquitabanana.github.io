@@ -1,7 +1,10 @@
-
+h1 {
+    font-size: 4.25rem;
+    font-size: clamp(2.25rem, 4.4vw, 5rem);
+    margin-bottom: 3rem;
+}
 
 .banner-wrapper {
-    /* margin-bottom: 10vh; */
     display: block;
     color: white;
 }
@@ -19,35 +22,26 @@
     padding: 0 20px;
 }
 
-
 #key-features li {
     margin: 1em 0;
     padding-left: 2.5vw;
 }
 
-h1 {
-    font-size: 4.25rem;
-    /* figure out scaling */
-    font-size: clamp(2.25rem,  4.4vw, 5rem);
-
-    margin-bottom: 3rem;
-    /* font-size: 2.5vw; */
-}
-
-.banner-text {
+#banner-text {
     margin: .5rem;
     
 }
 
 #hero-img-container {
     overflow: hidden;
+    object-fit: contain;
 }
 
 #hero-img-container img {
     display: block;
     max-width: 100%;
     height: 100%;
-    object-fit: contain;
+    
     /* overflow: hidden; */
     object-position: top;
 }
@@ -90,8 +84,7 @@ h1 {
     overflow: hidden;
 }
 
-.learn-more {
-    display: inline-block;
+#learn-more-btn {
     color: #fff;
     font-size: 2rem;
     font-size: clamp(1rem, .8rem + 1vw, 2.5rem);
@@ -99,9 +92,12 @@ h1 {
     border: var(--c4) double 4px;
     border-radius: 10px;
     transition: background-color 0.15s;
+    margin: auto;
+    
+    
 }
 
-.learn-more:hover {
+#learn-more-btn:hover {
     background-color: #777;
     /* add hover animation */
 }
@@ -112,32 +108,30 @@ hr {
     height: 2px;
 }
 
-hr:after {
-    /* box-sizing: border-box; */
-    /* margin: 100px; */
-}
-
-
 
 @media (max-width: 900px) {
+    /* navbar changes here */
     #featured-info .flex-container {
         height: 100%;
         flex-wrap: wrap-reverse !important;
-        /* border: red solid 10px; */
     }
     #banner-wrapper{
         padding-top: 20vh;
     }
 
-    #hero-banner.flex-item {
-        width: 90vw;
-        height: 35vh;
+    .flex-item {
+        height: 10px;
     }
 
-    #hero-img-container{
-        /* height: 45vh; */
-        /* width: 45vw; */
+    #banner-text {
+        width: 40vw;
     }
+
+    /* #hero-img-container {
+        width: 50vw;
+    } */
+
+
     
     h1 {
         text-align: center;
@@ -151,7 +145,35 @@ hr:after {
 
 }
 
+@media (max-width: 520px) {
+    #hero-container {
+        flex-wrap: wrap !important;
+    }
 
+    #hero-container .flex-item{
+        height: 40vh;
+    }
+
+    #banner-text {
+        margin-top: 0;
+        height: 40vh;
+        width: 100%;
+    }
+
+    h1 {
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    #hero-img-container img {
+        height: 50vh;
+    }
+
+    #learn-more-btn {
+        margin-top: .5rem;
+    }
+
+}
 
 
 
