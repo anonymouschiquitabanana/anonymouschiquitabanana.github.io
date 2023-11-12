@@ -41,8 +41,6 @@ h1 {
     display: block;
     max-width: 100%;
     height: 100%;
-    
-    /* overflow: hidden; */
     object-position: top;
 }
 
@@ -99,7 +97,6 @@ h1 {
 
 #learn-more-btn:hover {
     background-color: #777;
-    /* add hover animation */
 }
 
 hr {
@@ -119,19 +116,14 @@ hr {
         padding-top: 20vh;
     }
 
-    .flex-item {
-        height: 10px;
-    }
 
     #banner-text {
         width: 40vw;
     }
 
-    /* #hero-img-container {
+    #hero-img-container {
         width: 50vw;
-    } */
-
-
+    }
     
     h1 {
         text-align: center;
