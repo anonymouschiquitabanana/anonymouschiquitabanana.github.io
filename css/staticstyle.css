@@ -19,7 +19,6 @@
     --green1: #517A46;
     --green2: #649557;
     --green3:#4a6e40;
-    /* --green4: #395a32; */
 
     /* https: //color.adobe.com/create/color-wheel */
     --c2: rgb(122, 88, 70);
@@ -35,18 +34,13 @@
     --c5: #323B30;
     /* complementary */
 
-    /* --bkg-gradient: linear-gradient(to right,var(--green3), var(--green2)); */
     --bkg-gradient: linear-gradient(to right, var(--logo-g1), var(--logo-g2-v1));
 }
 
 
 body {
-    /* background-color: var(--c3); */
-    /* background-color: var(--beige-1); */
     background-color: var(--beige-2);
-    /* background-color: var(--beige-3); */
-
-    
+  
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* Gill Sans doesn't have spaces after periods? */

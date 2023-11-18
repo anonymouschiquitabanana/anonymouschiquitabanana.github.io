@@ -1,23 +1,8 @@
-/* TO DO
-GET SUGGESTIONS FOR:
-hamburger menu dropdown background color
-styling in hamburger menu
-
-navbar animation: is jumpiness jarring (easy to go to different animation
-
-***Add another button to distinguish locate growers/retailers? Replace a differnt button or new design?
-
-*/
-
-
-
 #navbar-wrapper {
     margin-bottom: 10vh;
 }
 
 #navbar {
-    
-    height: 13vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -27,12 +12,8 @@ navbar animation: is jumpiness jarring (easy to go to different animation
     top: 0;
     z-index: 999;
     margin: 0 !important;
-    
-    /* background-color: var(--green1); */
     background-image: var(--bkg-gradient);
     border-bottom: black double 3px;
-    /* can try making navbar thinner, have logo bulge out */
-    /* border is just for aligning other elements - temporary */
 }
 
 #navbar > a {
@@ -56,9 +37,6 @@ navbar animation: is jumpiness jarring (easy to go to different animation
     margin: 5px 15px;
 }
 
-/* On mobile: logo + hamburger - at 830 px when swithch to 1 col*/
-
-/* To have logo be larger than nav bar: */
 #logo {
     z-index: 9999;
     padding-top: 7vh;
@@ -77,11 +55,14 @@ navbar animation: is jumpiness jarring (easy to go to different animation
 }
 
 #hamburger-menu {
-    margin-right: 5vw;
     display: none;
 }
 
 #hamburger-btn {
+    display: none;
+}
+
+#hamburger-menu-contents {
     display: none;
 }
 
@@ -93,61 +74,80 @@ navbar animation: is jumpiness jarring (easy to go to different animation
 
     #hamburger-btn {
         display: none; 
-}
-
-
-    #hamburger-menu img {
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
+        position: fixed;
+        top: 10vh;
+        right: 40px;
     }
 
     #hamburger-menu {
-        display: flex;
-            }
+        display: inline-block;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        background-image: var(--bkg-gradient);
+    
+    }
+
+    #hamburger-menu img {
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        z-index: 999999;
+        position: fixed;
+        top: 6vh;
+        right: 17px;
+        }
 
     #hamburger-menu-contents {
-        /* style this for the dropdown hamburger menu */
-        /* make this an animation */
-        display: none;
-        position: absolute;
-        /* change background styling */
+        position: relative;
+        /* change border styling, background? */
         background-color: rgba(0, 0, 0, .85);
-        border: 2px black double;
+        border: 2px black solid;
         right: 0;
         top: 13.5vh;
-        width: 50%;
-
+        width: 100%;
+        background-image: var(--bkg-gradient);
+        display: block;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
     }
+
     #hamburger-menu-contents ul{
         list-style: none;
-        
         padding: 5px 10px;
-        }
+        transform: translateY(-16vh)
+    }
     
     #hamburger-menu-contents ul li {
         padding: 5px;
-        margin: 5px;
+        margin: 15px;
     }
 
 
-        #hamburger-menu-contents a {
-            color: white;
-        }
+    #hamburger-menu-contents a {
+        color: white;
+    }
 
     #hamburger-btn:checked ~ #hamburger-menu-contents{
-        display: block;
-        
+        height: auto;
+        opacity: 1; 
+    }
+
+    #hamburger-btn:checked ~ #hamburger-menu-contents ul {
+        transition: all .8s ease;
+        transition-delay: 100ms;
+        transform: translateY(0vh);
+    }
+
+    #hamburger-btn:not(:checked)~#hamburger-menu-contents ul {
+        transform: translateY(-16vh);
     }
 
     #navbar {
         height: 13.5vh;
         align-items: flex-end;
         justify-content:space-between;
-    }
-
-    #logo {
-
     }
 
     #logo img {
@@ -159,12 +159,8 @@ navbar animation: is jumpiness jarring (easy to go to different animation
         height: 12.5vh;
     }
 
-        #logo img:hover {
-            height: 12.5vh;
-        }
-
-
-
+    #logo img:hover {
+        height: 12.5vh;
+    }
 
 }
-

@@ -7,12 +7,26 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
+h1 {
+    font-size: 2.5rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    margin: 2vh 5vw;
 }
 
-section#faq {
-    margin-top: 18vh;
+h2 {
+    font-size: 1.6rem;
+    font-size: clamp(1.5rem, 2.2vw, 1.8rem);
+}
+
+p {
+    font-size: 1.3rem;
+        line-height: 2.5vh;
+        font-size: clamp(1rem, .8rem + .7vw, 1.5rem);
+    padding: 1rem;
+}
+
+#faq {
+    margin-top: 12vh;
 }
 
 div.accordion-wrapper {
@@ -32,15 +46,12 @@ input {
     visibility: 0;
 }
 
-h1 {
-    color: black;
-    padding: .25em;
-    position: relative;
-}
-
-label::before {
-    content: "+";
-    display: inline-block;
+div.p {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: var(--beige-2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 label {
@@ -51,33 +62,26 @@ label {
     user-select: none;
 }
 
-div.p {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s;
-    background-color: var(--beige-2);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
-}
-
-div.p p {
-    padding: 1em;
-}
-
-input:checked~h1 label::before {
-    content: "-";
-
+label::before {
+    content: "+";
     display: inline-block;
 }
 
-input:checked~h1~div.p {
-    max-height: 100px;
+input:checked~h2 label::before {
+    content: "-";
+    display: inline-block;
+}
+
+
+input:checked ~ h2 ~ div.p {
+    max-height: 200px;
 }
 
 @media (max-width: 900px) {
     /* navbar changes here */
     section#faq {
         margin-top: 15vh;
-}
+    }
 }
 
 

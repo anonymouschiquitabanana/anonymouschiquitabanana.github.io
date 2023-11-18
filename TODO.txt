@@ -1,0 +1,21 @@
+GET SUGGESTIONS FOR:
+hamburger menu dropdown background color and styling in hamburger menu
+
+navbar animation: is jumpiness jarring? (easy to go to different animation)
+
+***Add another button to distinguish locate growers/retailers? Replace a differnt button or new design?
+
+
+
+
+RANDOM ISSUES
+logo "arborvitae" text over text when scrolling
+Logo resolution when not hovered
+
+
+PAGE CONTENT
+FAQ:
+contact form at bottom? Link to plant info?
+More styling to be done
+
+
