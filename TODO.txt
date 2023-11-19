@@ -1,21 +1,25 @@
 GET SUGGESTIONS FOR:
-hamburger menu dropdown background color and styling in hamburger menu
-
+Nav Bar:
+hamburger menu dropdown styling (border)
+Absoulte vs fixed? hamburger menu only works with absolute as is -> can be different on desktop -> personally prefer desktop to be fixed
 navbar animation: is jumpiness jarring? (easy to go to different animation)
 
-***Add another button to distinguish locate growers/retailers? Replace a differnt button or new design?
 
-
+Home page:
+style button
 
 
 RANDOM ISSUES
-logo "arborvitae" text over text when scrolling
-Logo resolution when not hovered
+logo "arborvitae" text over text when scrolling (if navbar is fixed not absolute)
+***Add another button to distinguish locate growers/retailers? Replace a differnt button or new design?
+Can do some more trimming on navbar logo 
 
 
-PAGE CONTENT
+PAGE CONTENT TODO
 FAQ:
 contact form at bottom? Link to plant info?
 More styling to be done
+
+
 
 

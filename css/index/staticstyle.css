@@ -85,18 +85,22 @@ h1 {
 }
 
 #learn-more-btn {
+    /* need to figure out how to style this button */
     color: #fff;
     font-size: 2rem;
     font-size: clamp(1rem, .8rem + 1vw, 2.5rem);
     background-color: var(--c2);
-    border: var(--c4) double 4px;
+    border: white double 4px;
     border-radius: 10px;
-    transition: background-color 0.15s;
     margin: auto;
+    text-decoration: none;
 }
 
 #learn-more-btn:hover {
     background-color: #777;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    transition: background-color 150ms, text-decoration 150ms;
 }
 
 hr {
