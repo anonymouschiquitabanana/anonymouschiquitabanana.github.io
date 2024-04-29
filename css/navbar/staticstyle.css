@@ -1,5 +1,6 @@
 #navbar-wrapper {
-    margin-bottom: 10vh;
+    /* changed from 10 to 15 */
+    margin-bottom: 15vh;
 }
 
 #navbar {
@@ -8,7 +9,6 @@
     align-items: center;
     flex-wrap: nowrap;
     justify-content: space-around;
-    /* position: fixed; */
     position: absolute;
     top: 0;
     z-index: 999;
@@ -21,8 +21,8 @@
     z-index: 998;
     margin: 5px 1vw; 
     color: white;
-    font-size: 1.3rem;
-    font-size: clamp(1rem, .5rem + 1vw, 1.5rem);
+    font-size: 1.5rem;
+    font-size: clamp(1.4rem, .5rem + 1.1vw, 1.7rem);
     padding: 5px;
     text-decoration: none;
     border: white solid 1px;
@@ -45,20 +45,24 @@
 
 #logo {
     z-index: 9999;
-    padding-top: 7vh;
+    /* changed from 10 to 8 */
+    padding-top: 8vh;
 }
 
 #logo img {
-    height: 16vh;
+    /* changed from 16 to 20 */
+    height: 20vh;
 }
 
 #logo img:hover {
-    height: 17vh;
+    /* changed from 17 to 22 */
+    height: 22vh;
     transition: height 100ms;
 }
 
 #navbar {
-    height: 10.5vh;
+    /* changed from 10.5 to 15 */
+    height: 15vh;
 }
 
 #hamburger-menu {
@@ -155,22 +159,24 @@
     }
 
     #navbar {
-        height: 13.5vh;
+        /* changed from 13.5 to 17 */
+        height: 17vh;
         align-items: flex-end;
         justify-content:space-between;
     }
 
     #logo img {
-        /* position: fixed; */
-        top: -10vh;
-        margin-top: 100px;
+        /* top: -10vh; */
+        /* margin-top: 100px; */
         margin-left: 5vw;
         overflow: hidden;
-        height: 12.5vh;
+        /* changed from 12.5 to 15.5 */
+        height: 15.5vh;
     }
 
     #logo img:hover {
-        height: 12.5vh;
+        /* changed from 12.5 to 16.5 */
+        height: 16.5vh;
     }
 
 }

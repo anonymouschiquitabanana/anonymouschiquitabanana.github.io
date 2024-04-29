@@ -10,15 +10,20 @@ style button
 
 
 RANDOM ISSUES
-logo "arborvitae" text over text when scrolling (if navbar is fixed not absolute)
 ***Add another button to distinguish locate growers/retailers? Replace a differnt button or new design?
-Can do some more trimming on navbar logo 
+Can do some more trimming on navbar logo (trim around text, left side under hat, shoe tops - look at full screen size to see -- maybe lossy webp issue?)
 
 
 PAGE CONTENT TODO
 FAQ:
 contact form at bottom? Link to plant info?
 More styling to be done
+
+
+
+404 page
+google analytics
+leprechaunarb.com/?utm_source=tag
 
 
 

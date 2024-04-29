@@ -21,7 +21,7 @@
     --green3:#4a6e40;
 
     /* https: //color.adobe.com/create/color-wheel */
-    --c2: rgb(122, 88, 70);
+    --c2: rgb(131, 79, 50);
     --c3: #7A6646;
     --beige-1: #C8AD7F;
     --beige-2: #E5C899;
@@ -35,6 +35,10 @@
     /* complementary */
 
     --bkg-gradient: linear-gradient(to right, var(--logo-g1), var(--logo-g2-v1));
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -72,7 +76,22 @@ body {
     display: block;
     margin: 5vh auto;
     text-align: center;
-    padding: 1vh 1vw;
     height: auto;
     max-width: fit-content;
+}
+
+.down-arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    height: 1rem;
+    width: 1rem;
+
+}
+
+.down-arrow:hover {
+    border: solid gray;
+    border-width: 0 3px 3px 0;
 }

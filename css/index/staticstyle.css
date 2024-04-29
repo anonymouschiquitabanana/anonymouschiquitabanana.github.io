@@ -11,14 +11,20 @@ h1 {
 
 #hero-container {
     padding-top: 7vh;
+    padding-bottom: 3rem; /* for down arrow to fit*/
     /* avoid logo overlap */
     height: 100%;
     background-image: var(--bkg-gradient);
 }
 
+#pp {
+    font-size: 1.7rem;
+    font-size: calc(clamp(2.25rem, 4.4vw, 5rem) / 2.5);
+}
+
 #key-features {
-    font-size: 1.75rem;
-    font-size: clamp(1.1rem, 2.35vw, 2rem);
+    font-size: 2rem;
+    font-size: clamp(1.1rem, 2.35vw, 2.5rem);
     line-height: 1.1em;
     padding: 0 20px;
 }
@@ -84,19 +90,20 @@ h1 {
     overflow: hidden;
 }
 
-#learn-more-btn {
-    /* need to figure out how to style this button */
+.hero-btn {
+
     color: #fff;
     font-size: 2rem;
     font-size: clamp(1rem, .8rem + 1vw, 2.5rem);
     background-color: var(--c2);
-    border: white double 4px;
-    border-radius: 10px;
+    border: white solid 2px;
+    border-radius: 1.5rem;
     margin: auto;
     text-decoration: none;
+    padding: 1.25rem 2.25rem;
 }
 
-#learn-more-btn:hover {
+.hero-btn:hover {
     background-color: #777;
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -104,10 +111,21 @@ h1 {
 }
 
 hr {
-    border:none;
+    border: none;
     background: var(--logo-g1);
     height: 2px;
 }
+
+#scroll-down {
+    position: relative;
+    display: inline-block;
+    height: 1rem;
+    bottom: 3rem;
+    left: calc(50% - .5rem);
+    
+}
+
+
 
 
 @media (max-width: 900px) {
@@ -125,6 +143,12 @@ hr {
         width: 50vw;
     }
     
+    #hero-img-container img {
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     h1 {
         text-align: center;
         margin-bottom: 2rem;
